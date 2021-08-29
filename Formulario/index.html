@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function trocaCor(){
+            p1 = document.getElementById('pagina');
+            p1.innerHTML = "cor alterada";
+
+            corverde = document.getElementsByClassName("divverde");
+            for(i = 0; i < corverde.lenght; i++){
+                corverde[i].style = 'background-color: green';
+            }
+            
+        }
+    </script>
+
+</head>
+<body>
+    <div id="cor">
+    <form action="url">    
+        <!--<label>Cor</label>
+        <input type="Cor">
+        <br>
+        <Label>Margem</Label>
+        <input type="margem">
+        <br>
+        <input type="submit" values="submit"><!-->
+        
+        <label >COR</label>
+        <input name="COR"type="text">
+        <br>
+        <label >MARGEM</label>
+        <input name="MARGEM" type="number">
+        <br>
+        <button onclick="Cliquei();this">OK</button>    
+    </form>    
+    </div>
+
+    <div id="pagina">
+         <h2>
+           <p id="texto">	Lorem ipsum dictumst suscipit ut nunc nibh, accumsan pellentesque laoreet imperdiet elit cras egestas, molestie auctor porttitor maecenas fames. facilisis commodo fusce curae mauris sit eleifend ultrices massa purus, fringilla congue varius eleifend fringilla nibh placerat risus fusce, leo praesent porttitor orci nullam etiam tellus sem. viverra consectetur lectus in fusce dui nisl placerat tempor lacus, viverra erat a laoreet. </p>
+         </h2>
+    </div>
+
+    <div id="pagina2">
+        <h2>
+            <p>
+                Lorem ipsum fusce inceptos quis fusce quam elit aliquam posuere dui, pulvinar condimentum himenaeos ultrices sagittis et iaculis nec leo, platea velit odio lectus ultricies non varius nostra elit. dolor primis purus ante tellus purus lobortis dapibus vitae nibh adipiscing, vestibulum mauris proin aptent class posuere netus leo. curabitur leo eget vestibulum varius urna nulla suscipit condimentum ultricies. 
+            </p>
+        </h2>
+    </div>
+
+    <div id="pagina3">
+        <h2>
+            <p>
+                Lorem ipsum adipiscing ut nibh enim porta tristique viverra litora ut lectus cras conubia vehicula erat sapien, magna erat iaculis malesuada consequat placerat ad nibh scelerisque eu sagittis quisque per risus. lectus imperdiet sit duis nostra lacus potenti euismod turpis scelerisque, ut ipsum elementum ullamcorper tristique ornare tincidunt arcu eu, turpis himenaeos orci lectus quis magna dui congue. 
+            </p>
+        </h2>
+    </div>
+
+</body>
+</html>
