@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function cadastrar(){
+            var Nome = document.getElementById("Nome").Value
+            var CPF = document.getElementById("CPF").Value
+            var Endereco = document.getElementById("Endereco").Value
+        }
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+              <label for="Nome">Nome</label>
+              <input type="text" class="form-control" id="CPF" aria-describedby="nomeHelp" placeholder="Digite o Nome">
+              <small id="nomeHelp" class="form-text text-muted">Digite o Nome.</small>
+            </div>
+            <div class="form-group">
+              <label for="CPF">CPF</label>
+              <input type="number" class="form-control" id="CPF" placeholder="CPF">
+            </div>
+            <div class="form-group">
+              <label for="Endereco">Endereco</label>  
+              <input type="text" class="form-control" id="Endereco">
+              <label class="form-text" for="Endereco">Digite o endereco</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+    <table class="table" border="1" bgcolor="white">
+        <thead>
+          <tr bgcolor="gray">
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">CPF</th>
+            <th scope="col">Endereco</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr bgcolor="green">
+            <th scope="row">1</th>
+            <td >Jose</td>
+            <td >84719474209</td>
+            <td >Rua das oliveiras</td>
+          </tr>
+          <tr bgcolor="red">
+            <th scope="row">2</th>
+            <td>Diego</td>
+            <td>04932058375</td>
+            <td>Avenida A</td>
+          </tr>
+          <tr bgcolor="yellow">
+            <th scope="row">3</th>
+            <td >Paula</td>
+            <td>03759375831</td>
+            <td>
+                <div id="endereco">
+                Avenida A
+                </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
