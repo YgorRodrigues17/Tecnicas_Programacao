@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src=""></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <div id="cabecalho">
+      <nav class="navbar navbar-light nav-top">
+         <div class="container-fluid nav-container">
+             <a class="navbar-brand" href="https://www.instagram.com/ygor_rodrigueess/" target="_blank"><img
+                 src="instragram-logo.png" style="max-width: 130px;
+                 max-height: 80px;"></a>
+            <form class="d-flex">
+                 <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            </form>
+             <div>
+                <i class="bi bi-house-door icons"></i>
+                <i class="bi bi-inbox icons"></i>
+                <i class="bi bi-compass icons"></i>
+                <i class="bi bi-heart icons"></i>
+            </div>
+        </div>     
+    </div>
+  </header> 
+  
+  <div id="nome-pagina">
+    <h6>Liverpoolfc</h6>
+  </div>
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div id="carroselliverpool" class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="liverpool2.jpg"  height="400" width="400" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Salah-x-Leeds.jpg" height="400" width="400" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="salah_liverpool-600x400.jpg" height="400" width="400" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <div id="rodapepost">
+      <div id="legenda">
+        <strong> Vitoria por 3x0 contra o Leeds United no Elland Road</strong>
+       </div>
+       
+       <div id="total-curtidas-liverpool">
+         Curtidas:
+       </div>
+       <div id="botao-curtir">
+    <div>
+        <h3 id="counter-label">0</h3>
+    </div>
+    
+        <div id="botoes-liverpool">
+            <button onclick="incrementClick()">Like</button>
+            <button onclick="resetCounter()">Deslike</button>
+        </div>
+
+       </div>
+       <div id="comentariosliverpool"><br> <br>
+        <div id="total-comentarios-liverpool">
+          <form>
+            <div class="form-group">
+              <label for="txtComentario">Comentario</label>
+              <input type="text" class="form-control" id="txtComentario" aria-describedby="emailHelp" placeholder="comentario">
+            </div>
+            <button type="button" class="btn btn-primary btn-lg" onclick="adicionarComentario(txtComentario.value)">
+              Comentar
+            </button>
+          </form>
+         </div>
+         <div id="dGridComentarios">
+  
+          <table id="tbComentarios" class="table table-striped">
+          </table>
+        </div> 
+          Comentarios
+        </div>
+         <h6>HarveyElliot07:
+           <h7>
+             Keep Going
+           </h7>
+         </h6>
+         <h6>Steven Gerrard:
+           <h7>
+             Liverpooooll
+           </h7>
+         </h6>
+        
+     </div>
+    </div>
+
+  <div id="nome-pagina">
+    <h6>Lamborghini</h6>
+  </div>
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div id="carroselamborghini" class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="D_NQ_NP_852298-MLB47010793240_082021-W.jpg"  height="400" width="400" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="lamborghini-aventador-lp-780-4-ultimae-cupe-1625666114359_v2_615x300.jpg" height="400" width="400" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="download2.jpg" height="400" width="400" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+  <div id="rodapelamborghini">
+    <div id="legenda">
+      <strong>Lamborghini</strong>
+     </div>
+     
+     <div id="total-curtidas-lamborghini">
+       Curtidas
+     </div>
+     <div id="botao-curtida">
+    <div>
+        <h3 id="counter-label2">0</h3>
+    </div>
+    
+        <div id="botoes-lamborghini">
+            <button onclick="incrementClick2()">Like</button>
+            <button onclick="resetCounter2()">Deslike</button>
+        </div>
+    
+     </div>
+     <div id="comentarioslamborghini"><br> <br>
+      <div id="total-comentarios-lamborghini">
+        <form>
+          <div class="form-group">
+            <label for="txtComentario2">Comentario</label>
+            <input type="text" class="form-control" id="txtComentario2" aria-describedby="emailHelp" placeholder="Comentario">
+          </div>
+          <button type="button" class="btn btn-primary btn-lg" onclick="adicionarComentario2(txtComentario2.value)">
+            Comentar
+          </button>
+        </form>
+       </div>
+       <div id="dGridComentarios2">
+
+        <table id="tbComentarios2" class="table table-striped">
+        </table>
+        Comentarios
+      </div>
+       <h6>Caio Araujo:
+         <h7>
+           Esta é a melhor lamborghini ja feita
+         </h7>
+       </h6>
+       <h6>Greg Ferreira:
+         <h7>
+           O melhor carro do mundo 
+         </h7>
+       </h6>
+     </div>
+   </div>
+  <div id="nome-pagina">
+    <h6>Boeing</h6>
+  </div>
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div id="carroselboeing" class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="boeing-777x-capa2019-012.jpg"  height="400" width="400" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Boeing_777-32W-ER,_TAM_AN1513615.jpg" height="400" width="400" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="download.png" height="400" width="400" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+  <div id="rodapeboeing">
+    <div id="legenda">
+      <strong>Boeing</strong>
+     </div>
+     <div id="total-curtidas-boeing">
+       Curtidas
+     </div>
+     <div id="botao-curtida">
+    <div>
+        <h3 id="counter-label3">0</h3>
+    </div>
+    
+        <div id="botoes-boeing">
+            <button onclick="incrementClick3()">Like</button>
+            <button onclick="resetCounter3()">Deslike</button>
+        </div>
+     </div>
+     <div id="comentariosboeing"><br> <br>
+      <div id="total-comentarios-boeing">
+        <form>
+          <div class="form-group">
+            <label for="txtComentario3">Comentario</label>
+            <input type="text" class="form-control" id="txtComentario3" aria-describedby="emailHelp" placeholder="comentario">
+          </div>
+          <button type="button" class="btn btn-primary btn-lg" onclick="adicionarComentario3(txtComentario3.value)">
+            Comentar
+          </button>
+        </form>
+       </div>
+      <div id="dGridComentarios3">
+
+        <table id="tbComentarios3" class="table table-striped">
+        </table>
+        Comentarios
+      </div>
+       <h6>LitoSousa:
+         <h7>
+           Este e meu avião preferido
+         </h7>
+       </h6>
+       <h6>Aero Por tras da aviação:
+         <h7>
+           Este é o avião mais bonito que ja vi
+         </h7>
+       </h6>
+     </div>
+   </div>
+  </div>
+   
+</body>
+</html>
